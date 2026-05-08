@@ -1,0 +1,8 @@
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/debug/deps/esp_wifi_sys-ad92030351afe4bf.d: /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-wifi-sys-0.8.1/src/lib.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-wifi-sys-0.8.1/src/c_types.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-wifi-sys-0.8.1/src/fmt.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-wifi-sys-0.8.1/src/include/esp32c6.rs
+
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/debug/deps/libesp_wifi_sys-ad92030351afe4bf.rmeta: /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-wifi-sys-0.8.1/src/lib.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-wifi-sys-0.8.1/src/c_types.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-wifi-sys-0.8.1/src/fmt.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-wifi-sys-0.8.1/src/include/esp32c6.rs
+
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-wifi-sys-0.8.1/src/lib.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-wifi-sys-0.8.1/src/c_types.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-wifi-sys-0.8.1/src/fmt.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-wifi-sys-0.8.1/src/include/esp32c6.rs:

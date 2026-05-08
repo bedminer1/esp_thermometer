@@ -1,0 +1,1 @@
+rustc-LLVM ERROR: Global variable '__EXTERNAL_INTERRUPTS' has an invalid section specifier '.rwtext': mach-o section specifier requires a segment and section separated by a comma.

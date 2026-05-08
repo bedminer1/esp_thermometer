@@ -1,0 +1,10 @@
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/release/deps/esp_radio_rtos_driver-4c8e5cc6017354a7.d: /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-radio-rtos-driver-0.2.0/src/lib.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-radio-rtos-driver-0.2.0/src/queue.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-radio-rtos-driver-0.2.0/src/semaphore.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-radio-rtos-driver-0.2.0/src/timer.rs
+
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/release/deps/libesp_radio_rtos_driver-4c8e5cc6017354a7.rlib: /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-radio-rtos-driver-0.2.0/src/lib.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-radio-rtos-driver-0.2.0/src/queue.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-radio-rtos-driver-0.2.0/src/semaphore.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-radio-rtos-driver-0.2.0/src/timer.rs
+
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/release/deps/libesp_radio_rtos_driver-4c8e5cc6017354a7.rmeta: /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-radio-rtos-driver-0.2.0/src/lib.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-radio-rtos-driver-0.2.0/src/queue.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-radio-rtos-driver-0.2.0/src/semaphore.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-radio-rtos-driver-0.2.0/src/timer.rs
+
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-radio-rtos-driver-0.2.0/src/lib.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-radio-rtos-driver-0.2.0/src/queue.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-radio-rtos-driver-0.2.0/src/semaphore.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-radio-rtos-driver-0.2.0/src/timer.rs:

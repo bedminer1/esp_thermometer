@@ -1,0 +1,10 @@
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/debug/deps/esp_alloc-00de958258a8411a.d: /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-alloc-0.9.0/src/lib.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-alloc-0.9.0/src/allocators.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-alloc-0.9.0/src/heap/mod.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-alloc-0.9.0/src/heap/llff.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-alloc-0.9.0/src/macros.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-alloc-0.9.0/src/malloc.rs
+
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/debug/deps/libesp_alloc-00de958258a8411a.rmeta: /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-alloc-0.9.0/src/lib.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-alloc-0.9.0/src/allocators.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-alloc-0.9.0/src/heap/mod.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-alloc-0.9.0/src/heap/llff.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-alloc-0.9.0/src/macros.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-alloc-0.9.0/src/malloc.rs
+
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-alloc-0.9.0/src/lib.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-alloc-0.9.0/src/allocators.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-alloc-0.9.0/src/heap/mod.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-alloc-0.9.0/src/heap/llff.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-alloc-0.9.0/src/macros.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-alloc-0.9.0/src/malloc.rs:

@@ -1,0 +1,3 @@
+cargo:rustc-link-search=/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/release/build/esp32c6-3b0541f2bb2d153b/out
+cargo:rerun-if-changed=device.x
+cargo:rerun-if-changed=build.rs

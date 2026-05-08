@@ -1,0 +1,11 @@
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/release/deps/somni_expr-af47ec078dccf45f.d: /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/somni-expr-0.2.0/src/lib.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/somni-expr-0.2.0/src/error.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/somni-expr-0.2.0/src/function.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/somni-expr-0.2.0/src/value.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/somni-expr-0.2.0/src/visitor.rs
+
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/release/deps/libsomni_expr-af47ec078dccf45f.rlib: /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/somni-expr-0.2.0/src/lib.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/somni-expr-0.2.0/src/error.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/somni-expr-0.2.0/src/function.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/somni-expr-0.2.0/src/value.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/somni-expr-0.2.0/src/visitor.rs
+
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/release/deps/libsomni_expr-af47ec078dccf45f.rmeta: /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/somni-expr-0.2.0/src/lib.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/somni-expr-0.2.0/src/error.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/somni-expr-0.2.0/src/function.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/somni-expr-0.2.0/src/value.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/somni-expr-0.2.0/src/visitor.rs
+
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/somni-expr-0.2.0/src/lib.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/somni-expr-0.2.0/src/error.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/somni-expr-0.2.0/src/function.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/somni-expr-0.2.0/src/value.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/somni-expr-0.2.0/src/visitor.rs:

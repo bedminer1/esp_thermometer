@@ -1,0 +1,12 @@
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/release/deps/rlsf-77d46019f7759213.d: /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/lib.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/utils.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/flex.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/int.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/tlsf.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/../README.md
+
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/release/deps/librlsf-77d46019f7759213.rlib: /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/lib.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/utils.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/flex.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/int.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/tlsf.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/../README.md
+
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/release/deps/librlsf-77d46019f7759213.rmeta: /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/lib.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/utils.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/flex.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/int.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/tlsf.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/../README.md
+
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/lib.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/utils.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/flex.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/int.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/tlsf.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rlsf-0.2.2/src/../README.md:

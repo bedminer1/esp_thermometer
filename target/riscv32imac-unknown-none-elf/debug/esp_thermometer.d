@@ -1,0 +1,1 @@
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/debug/esp_thermometer: /Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/build.rs /Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/src/bin/main.rs /Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/src/lib.rs

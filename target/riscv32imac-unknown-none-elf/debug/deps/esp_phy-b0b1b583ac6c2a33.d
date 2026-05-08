@@ -1,0 +1,12 @@
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/debug/deps/esp_phy-b0b1b583ac6c2a33.d: /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-phy-0.1.1/src/lib.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-phy-0.1.1/src/fmt.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-phy-0.1.1/src/common_adapter.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-phy-0.1.1/src/phy_init_data/mod.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-phy-0.1.1/src/phy_init_data/phy_init_data_esp32c6.rs /Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/debug/build/esp-phy-eb170025fb56c207/out/esp_phy_config_table.md
+
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/debug/deps/libesp_phy-b0b1b583ac6c2a33.rmeta: /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-phy-0.1.1/src/lib.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-phy-0.1.1/src/fmt.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-phy-0.1.1/src/common_adapter.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-phy-0.1.1/src/phy_init_data/mod.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-phy-0.1.1/src/phy_init_data/phy_init_data_esp32c6.rs /Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/debug/build/esp-phy-eb170025fb56c207/out/esp_phy_config_table.md
+
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-phy-0.1.1/src/lib.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-phy-0.1.1/src/fmt.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-phy-0.1.1/src/common_adapter.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-phy-0.1.1/src/phy_init_data/mod.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/esp-phy-0.1.1/src/phy_init_data/phy_init_data_esp32c6.rs:
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/debug/build/esp-phy-eb170025fb56c207/out/esp_phy_config_table.md:
+
+# env-dep:OUT_DIR=/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/debug/build/esp-phy-eb170025fb56c207/out
