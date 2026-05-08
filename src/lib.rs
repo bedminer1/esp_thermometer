@@ -1,14 +1,8 @@
 #![no_std]
 
-#[derive(serde::Serialize, serde::Deserialize, Debug)]
-pub struct Telemetry {
-    pub temp: f32,
-    pub uptime_ms: u32,
-    pub interval_ms: u32,
-}
+pub mod commands;
+pub mod telemetry;
 
-#[derive(serde::Serialize, serde::Deserialize, Debug)]
-pub enum Command {
-    SetInterval { millis: u32 },
-    ToggleInterval,
-}
+// Forward the types so other crates/bins can use them directly from the root
+pub use commands::Command;
+pub use telemetry::Telemetry;
