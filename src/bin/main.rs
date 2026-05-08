@@ -1,10 +1,5 @@
 #![no_std]
 #![no_main]
-#![deny(
-    clippy::mem_forget,
-    reason = "mem::forget is generally not safe to do with esp_hal types, especially those \
-    holding buffers for the duration of a data transfer."
-)]
 
 use esp_hal::clock::CpuClock;
 use esp_hal::timer::timg::TimerGroup;
@@ -19,54 +14,47 @@ use embassy_executor::Spawner;
 use embassy_sync::blocking_mutex::raw::CriticalSectionRawMutex;
 use embassy_sync::signal::Signal;
 use embassy_time::{Duration, Instant, Timer};
+use futures_util::future::{select, Either};
 
 use esp_backtrace as _;
 
 extern crate alloc;
 
-// This creates a default app-descriptor required by the esp-idf bootloader.
-// For more information see: <https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/app_image_format.html#application-description>
 esp_bootloader_esp_idf::esp_app_desc!();
 
 static INTERVAL_SIGNAL: Signal<CriticalSectionRawMutex, u32> = Signal::new();
 
 #[embassy_executor::task]
-async fn rx_task(rx: &'static mut UsbSerialJtagRx<'static, esp_hal::Blocking>) {
+async fn rx_task(mut rx: UsbSerialJtagRx<'static, esp_hal::Async>) {
+    use embedded_io_async::Read;
     let mut buffer = [0u8; 32];
     let mut pos = 0;
 
     loop {
-        match rx.read_byte() {
-            Ok(b) => {
-                if b == 0 {
-                    if pos > 0 {
-                        if let Ok(cmd) = from_bytes_cobs::<Command>(&mut buffer[..pos]) {
-                            match cmd {
-                                Command::SetInterval { millis } => {
-                                    INTERVAL_SIGNAL.signal(millis);
-                                }
-                                Command::ToggleInterval => {}
+        let mut byte = [0u8; 1];
+        // This is now TRULY async and won't block the other tasks
+        if rx.read_exact(&mut byte).await.is_ok() {
+            let b = byte[0];
+            if b == 0 {
+                if pos > 0 {
+                    if let Ok(cmd) = from_bytes_cobs::<Command>(&mut buffer[..pos]) {
+                        match cmd {
+                            Command::SetInterval { millis } => {
+                                INTERVAL_SIGNAL.signal(millis);
                             }
+                            Command::ToggleInterval => {}
                         }
-                        pos = 0;
                     }
-                } else if pos < buffer.len() {
-                    buffer[pos] = b;
-                    pos += 1;
+                    pos = 0;
                 }
-            }
-            Err(_) => {
-                // Yield if no data
-                Timer::after(Duration::from_millis(10)).await;
+            } else if pos < buffer.len() {
+                buffer[pos] = b;
+                pos += 1;
             }
         }
     }
 }
 
-#[allow(
-    clippy::large_stack_frames,
-    reason = "it's not unusual to allocate larger buffers etc. in main"
-)]
 #[esp_rtos::main]
 async fn main(spawner: Spawner) -> ! {
     esp_println::logger::init_logger_from_env();
@@ -88,12 +76,9 @@ async fn main(spawner: Spawner) -> ! {
         esp_radio::wifi::new(&radio_init, peripherals.WIFI, Default::default())
             .expect("Failed to initialize Wi-Fi controller");
 
-    let usb_serial = UsbSerialJtag::new(peripherals.USB_DEVICE);
+    // Initialize USB Serial in Async mode
+    let usb_serial = UsbSerialJtag::new(peripherals.USB_DEVICE).into_async();
     let (rx, mut tx) = usb_serial.split();
-
-    static RX_CELL: static_cell::StaticCell<UsbSerialJtagRx<'static, esp_hal::Blocking>> =
-        static_cell::StaticCell::new();
-    let rx = RX_CELL.init(rx);
 
     spawner.spawn(rx_task(rx)).ok();
 
@@ -105,13 +90,7 @@ async fn main(spawner: Spawner) -> ! {
     let mut current_interval = 1000u32;
 
     loop {
-        if INTERVAL_SIGNAL.signaled() {
-            current_interval = INTERVAL_SIGNAL.wait().await;
-            info!("Interval changed to {}ms", current_interval);
-        }
-
         let temp = temperature_sensor.get_temperature();
-        
         let data = Telemetry {
             temp: temp.to_celsius(),
             uptime_ms: start_time.elapsed().as_millis() as u32,
@@ -122,6 +101,19 @@ async fn main(spawner: Spawner) -> ! {
             tx.write(bytes).ok();
         }
 
-        Timer::after(Duration::from_millis(current_interval as u64)).await;
+        // Wait for EITHER the timer OR a new command signal
+        let timer_fut = Timer::after(Duration::from_millis(current_interval as u64));
+        let signal_fut = INTERVAL_SIGNAL.wait();
+
+        match select(timer_fut, signal_fut).await {
+            Either::Left(_) => {
+                // Timer finished normally, continue to next loop
+            }
+            Either::Right((new_millis, _)) => {
+                // Command received! Update and restart loop immediately
+                current_interval = new_millis;
+                info!("Interval updated to {}ms", current_interval);
+            }
+        }
     }
 }
