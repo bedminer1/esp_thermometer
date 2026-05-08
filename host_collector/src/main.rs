@@ -8,6 +8,13 @@ use std::io::Read;
 pub struct Telemetry {
     pub temp: f32,
     pub uptime_ms: u32,
+    pub interval_ms: u32,
+}
+
+#[derive(serde::Serialize, Debug)]
+pub enum Command {
+    SetInterval { millis: u32 },
+    ToggleInterval,
 }
 
 fn main() {
@@ -17,13 +24,33 @@ fn main() {
     println!("Opening serial port: {} at {} baud", port_name, baud_rate);
 
     let mut port = serialport::new(port_name, baud_rate)
-        .timeout(Duration::from_millis(1000))
+        .timeout(Duration::from_millis(10))
         .open()
         .expect("Failed to open port");
 
-    let mut packet_buffer = Vec::new();
+    let mut clone = port.try_clone().expect("Failed to clone port");
+    
+    // Spawn a thread to handle keyboard input
+    std::thread::spawn(move || {
+        let mut current_interval = 1000u32;
+        println!("Controls: [Space] to toggle 1s/5s logging");
+        
+        // This is a bit rough for a CLI but works for a quick test
+        use std::io::BufRead;
+        let stdin = std::io::stdin();
+        for _ in stdin.lock().lines() {
+            current_interval = if current_interval == 1000 { 5000 } else { 1000 };
+            let cmd = Command::SetInterval { millis: current_interval };
+            let mut buf = [0u8; 32];
+            if let Ok(bytes) = postcard::to_slice_cobs(&cmd, &mut buf) {
+                clone.write_all(bytes).ok();
+                println!(">>> Sent Command: SetInterval {}ms", current_interval);
+            }
+        }
+    });
 
-    println!("Listening for telemetry... (Press Ctrl+C to stop)");
+    let mut packet_buffer = Vec::new();
+    println!("Listening for telemetry... (Press Enter to toggle frequency)");
 
     loop {
         let mut byte = [0u8; 1];

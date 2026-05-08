@@ -1,0 +1,4 @@
+[build]
+# Clear the target inherited from the parent directory
+# This forces Cargo to build for the host (your Mac)
+target = "aarch64-apple-darwin"
