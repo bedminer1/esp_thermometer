@@ -8,8 +8,6 @@ use esp_hal::usb_serial_jtag::{UsbSerialJtag, UsbSerialJtagRx};
 use esp_thermometer::{Command, Telemetry};
 use postcard::{from_bytes_cobs, to_slice_cobs};
 
-use log::info;
-
 use embassy_executor::Spawner;
 use embassy_sync::blocking_mutex::raw::CriticalSectionRawMutex;
 use embassy_sync::signal::Signal;
@@ -32,7 +30,6 @@ async fn rx_task(mut rx: UsbSerialJtagRx<'static, esp_hal::Async>) {
 
     loop {
         let mut byte = [0u8; 1];
-        // This is now TRULY async and won't block the other tasks
         if rx.read_exact(&mut byte).await.is_ok() {
             let b = byte[0];
             if b == 0 {
@@ -57,8 +54,6 @@ async fn rx_task(mut rx: UsbSerialJtagRx<'static, esp_hal::Async>) {
 
 #[esp_rtos::main]
 async fn main(spawner: Spawner) -> ! {
-    esp_println::logger::init_logger_from_env();
-
     let config = esp_hal::Config::default().with_cpu_clock(CpuClock::max());
     let peripherals = esp_hal::init(config);
 
@@ -69,14 +64,6 @@ async fn main(spawner: Spawner) -> ! {
         esp_hal::interrupt::software::SoftwareInterruptControl::new(peripherals.SW_INTERRUPT);
     esp_rtos::start(timg0.timer0, sw_interrupt.software_interrupt0);
 
-    info!("Embassy initialized!");
-
-    let radio_init = esp_radio::init().expect("Failed to initialize Wi-Fi/BLE controller");
-    let (mut _wifi_controller, _interfaces) =
-        esp_radio::wifi::new(&radio_init, peripherals.WIFI, Default::default())
-            .expect("Failed to initialize Wi-Fi controller");
-
-    // Initialize USB Serial in Async mode
     let usb_serial = UsbSerialJtag::new(peripherals.USB_DEVICE).into_async();
     let (rx, mut tx) = usb_serial.split();
 
@@ -90,6 +77,7 @@ async fn main(spawner: Spawner) -> ! {
     let mut current_interval = 1000u32;
 
     loop {
+        // Step 1: Send current telemetry
         let temp = temperature_sensor.get_temperature();
         let data = Telemetry {
             temp: temp.to_celsius(),
@@ -101,18 +89,17 @@ async fn main(spawner: Spawner) -> ! {
             tx.write(bytes).ok();
         }
 
-        // Wait for EITHER the timer OR a new command signal
+        // Step 2: Wait for Timer OR New Command
         let timer_fut = Timer::after(Duration::from_millis(current_interval as u64));
         let signal_fut = INTERVAL_SIGNAL.wait();
 
         match select(timer_fut, signal_fut).await {
             Either::Left(_) => {
-                // Timer finished normally, continue to next loop
+                // Normal timeout, continue loop
             }
             Either::Right((new_millis, _)) => {
-                // Command received! Update and restart loop immediately
+                // Command received! Update and immediately loop (sends packet instantly)
                 current_interval = new_millis;
-                info!("Interval updated to {}ms", current_interval);
             }
         }
     }
