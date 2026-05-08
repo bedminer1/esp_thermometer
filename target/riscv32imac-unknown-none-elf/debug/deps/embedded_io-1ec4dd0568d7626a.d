@@ -1,0 +1,9 @@
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/debug/deps/embedded_io-1ec4dd0568d7626a.d: /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embedded-io-0.6.1/src/lib.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embedded-io-0.6.1/src/impls/mod.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embedded-io-0.6.1/src/impls/slice_mut.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embedded-io-0.6.1/src/impls/slice_ref.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embedded-io-0.6.1/src/../README.md
+
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/debug/deps/libembedded_io-1ec4dd0568d7626a.rmeta: /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embedded-io-0.6.1/src/lib.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embedded-io-0.6.1/src/impls/mod.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embedded-io-0.6.1/src/impls/slice_mut.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embedded-io-0.6.1/src/impls/slice_ref.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embedded-io-0.6.1/src/../README.md
+
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embedded-io-0.6.1/src/lib.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embedded-io-0.6.1/src/impls/mod.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embedded-io-0.6.1/src/impls/slice_mut.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embedded-io-0.6.1/src/impls/slice_ref.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embedded-io-0.6.1/src/../README.md:

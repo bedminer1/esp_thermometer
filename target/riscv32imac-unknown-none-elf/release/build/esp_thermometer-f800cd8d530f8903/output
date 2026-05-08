@@ -1,0 +1,2 @@
+cargo:rustc-link-arg=--error-handling-script=/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/release/build/esp_thermometer-c5f902dbcb2b3030/build-script-build
+cargo:rustc-link-arg=-Tlinkall.x

@@ -1,6 +1,7 @@
 [workspace]
 members = [
+    "common",
     "firmware",
-    "host_collector",
+    "station",
 ]
 resolver = "2"

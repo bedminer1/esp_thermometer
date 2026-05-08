@@ -1,0 +1,11 @@
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/debug/deps/embassy_net-1af706c88f09fe01.d: /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/lib.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/fmt.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/driver_util.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/tcp.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/time.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/udp.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/../README.md
+
+/Users/alex/Desktop/HOMEWORK/repos.nosync/esp_thermometer/target/riscv32imac-unknown-none-elf/debug/deps/libembassy_net-1af706c88f09fe01.rmeta: /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/lib.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/fmt.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/driver_util.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/tcp.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/time.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/udp.rs /Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/../README.md
+
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/lib.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/fmt.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/driver_util.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/tcp.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/time.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/udp.rs:
+/Users/alex/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-0.7.1/src/../README.md:

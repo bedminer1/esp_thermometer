@@ -1,4 +1,6 @@
 #![no_std]
 
-pub mod commands;
-pub mod telemetry;
+pub mod rx;
+pub mod tx;
+
+pub use common::{Command, Telemetry};

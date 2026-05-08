@@ -1,0 +1,10 @@
+[package]
+name = "station"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+common = { path = "../common" }
+serialport = "4.6.1"
+postcard = { version = "1.0", features = ["use-std"] }
+serde = { version = "1.0", features = ["derive"] }
